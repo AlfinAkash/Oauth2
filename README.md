@@ -11,7 +11,7 @@ Complete authentication flow documentation for the MERN stack Google Sign-In imp
 | Database | MongoDB (Mongoose) |
 | Session | Stateless JWT (`httpOnly` cookie) |
 | Frontend domain | `azyrexcloud.online` |
-| Backend domain | `azyrex-backend.vercel.app` |
+| Backend domain | `backend-url` |
 
 This implements the **OAuth2 Authorization Code Flow** (server-side flow) — the frontend never directly handles Google's tokens; only the backend does.
 
@@ -69,7 +69,7 @@ This implements the **OAuth2 Authorization Code Flow** (server-side flow) — th
 8. User clicks **Allow**.
 9. Google issues a **one-time authorization code** and redirects to the registered callback:
    ```
-   https://azyrex-backend.vercel.app/auth/google/callback?code=4/0AY0e-g7...
+   https://backend-url/auth/google/callback?code=4/0AY0e-g7...
    ```
    This code is short-lived and single-use.
 
