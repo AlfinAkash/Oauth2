@@ -14,7 +14,7 @@ router.get(
 // Step 2: Google callback
 router.get(
   "/google/callback",
-  passport.authenticate("google", { session: false, failureRedirect: `${process.env.CLIENT_URL}/login` }),
+  passport.authenticate("google", { session: false, failureRedirect: `${process.env.CLIENT_URL}` }),
   (req, res) => {
     const token = generateToken(req.user);
 
