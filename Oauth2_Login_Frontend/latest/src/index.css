@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap");
+@import "tailwindcss";
+
+@media (prefers-reduced-motion: reduce) {
+  .orbit-ring { animation: none !important; }
+}
+
+@theme {
+  --animate-spin-slow: spin 14s linear infinite;
+  --animate-spin-slower: spin 20s linear infinite reverse;
+  --animate-spin-slowest: spin 28s linear infinite;
+}
