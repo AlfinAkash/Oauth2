@@ -6,6 +6,7 @@
 }
 
 @theme {
+  --animate-spin-slow: spin 4s linear infinite;
   --animate-spin-slow: spin 14s linear infinite;
   --animate-spin-slower: spin 20s linear infinite reverse;
   --animate-spin-slowest: spin 28s linear infinite;
