@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import { Navigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 
-// That page is dummy
 
 const ProtectedRoute = () => {
   const { user, loading } = useAuth();
@@ -14,7 +13,7 @@ const ProtectedRoute = () => {
   }, [user, loading]);
 
   if (loading) return <p>Loading...</p>;
-  if (!user) return <Navigate to="/login" replace />;
+  if (!user) return <Navigate to="/" replace />;
 
   return <p>Redirecting...</p>;
 };
