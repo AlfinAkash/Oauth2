@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import { Navigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 
+// That page is dummy
+
 const ProtectedRoute = () => {
   const { user, loading } = useAuth();
 
